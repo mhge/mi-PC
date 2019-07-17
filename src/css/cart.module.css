@@ -1,0 +1,45 @@
+.list {
+  width: 1160px;
+  margin: 0 auto;
+
+  margin-bottom: 30px;
+}
+
+.cc {
+  width: 100px;
+}
+.flex {
+  flex: 0;
+  /* margin-left: 90px; */
+}
+.flex > div:first-child {
+  width: 300px;
+  margin-right: 60px;
+}
+.ant-col {
+  text-align: center;
+}
+.row {
+  margin: 0 auto;
+  width: 1050px;
+}
+h2 {
+  margin-left: 60px;
+}
+.ant-list-items {
+  margin-left: 88px;
+}
+.num {
+  width: 60px;
+  margin-left: 80px;
+  margin-right: 60px;
+}
+.count {
+  margin: 0 60px;
+}
+.counts {
+  margin: 0 80px;
+}
+.del {
+  text-align: center;
+}

@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "antd/dist/antd.css";
+import "./App.css";
+import { HashRouter as Router, Route, Redirect } from "react-router-dom";
+import Main from "./views/main";
+import Regin from "./views/regin";
+import Login from "./views/login";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Did from "./views/Did";
+
+class App extends Component {
+  // eslint-disable-next-line no-useless-constructor
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <Router>
+          <Route path="/main" component={Main} />
+          <Route path="/regin" component={Regin} />
+          <Route path="/login" component={Login} />
+
+          <Redirect to="/main/home" />
+          <Route path="/did" component={Did} />
+        </Router>
+      </div>
+    );
+  }
 }
-
 export default App;

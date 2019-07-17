@@ -1,0 +1,11 @@
+.form {
+  max-width: 300px;
+	margin: 0px auto;
+}
+.forgot {
+  float: right;
+}
+.button {
+  width: 100%;
+	color: deeppink;
+}
